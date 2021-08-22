@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/el_eco_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>El Eco</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="contenedor-arriba-header container">
+            <article class="contenedor-redes">
+                <ul>
+                    <li><a href="https://www.facebook.com/elecodetandil/" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li><a href="https://twitter.com/elecotandil/" target="_blank">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a></li>
+                    <li><a href="https://www.youtube.com/user/elecodetandil/" target="_blank">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/elecodetandil/" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                </ul>
+            </article>
+            <article class="temperatura">
+                <p>18.6 ºC</p>
+            </article>
+        </div>
+        <div class="contenedor-logo">
+            <a href="index.html"><img class="logo-principal" src="img/el_eco_logo.png" alt="Logo"></a>
+        </div>
+        <div class="contenedor-medio-header container">
+            <article class="contenedor-fecha-accesos">
+                <div class="text-center">
+                    <p>Viernes, 04 de Junio de 2021 │ Tandil, Buenos Aires</p>
+                </div>
+                <div class="accesos">
+                    <ion-icon name="newspaper-outline"></ion-icon>
+                    <p>EDICIÓN IMPRESA</p>
+                    <ion-icon name="tv-outline"></ion-icon>
+                    <p>TV EN VIVO</p>
+                    <ion-icon name="mic-outline"></ion-icon>
+                    <p>RADIO EN VIVO</p>
+                </div>
+            </article>
+        </div>
+        <div class="contenedor-medio-header-mobile container">
+            <div class="contenedor-logo-menu">
+                <div class="contenedor-btn-menu">
+                    <button id="btn-menu-barras">
+                        <ion-icon name="reorder-four-outline" role="img" class="md hydrated"
+                            aria-label="reorder four outline"></ion-icon>
+                    </button>
+                </div>
+                <div class="contenedor-logo">
+                    <a href="index.html"><img src="img/el_eco_logo.png" alt="Logo"></a>
+                </div>
+            </div>
+            <div class="contenedor-accesos">
+                <article class="accesos">
+                    <ion-icon name="newspaper-outline"></ion-icon>
+                    <ion-icon class="tv" name="tv-outline"></ion-icon>
+                    <ion-icon name="mic-outline"></ion-icon>
+                </article>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <section class="contenedor-bajo-header ocultar">
+            <ul class="botonera">
+                <li><a data-url="home">HOME</a></li>
+                <li><a data-url="noticias">NOTICIAS</a></li>
+                <li><a data-url="contacto">CONTACTO</a></li>
+                <li><a data-url="acceder">ACCEDER</a></li>
+                <li class="administrador"><a a data-url="administrador">ADMIN</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <div id="contenido">
+    </div>
+
+    <footer>
+        <div class="contenedor-footer container">
+            <div class="derechos-reservados">
+                <div class="contenedor-img">
+                    <img src="img/el_eco_logo.png" alt="Logo">
+                </div>
+                <ul>
+                    <li>2008 - 2021 | El Eco Multimedios</li>
+                    <li>H. Yrigoyen 560 - C.P. 7000 - Tandil</li>
+                </ul>
+            </div>
+            <div class="multimedios">
+                <h3 id="eleco-footer">EL ECO</h3>
+                <ul id="eleco-social" class="eleco-social ocultar">
+                    <li>Multimedios</li>
+                    <li>Tandil FM</li>
+                    <li>Eco Tv</li>
+                    <li>Director</li>
+                    <li>Rumbos</li>
+                    <li>Quiero Publicitar</li>
+                    <li>Adherite al club</li>
+                </ul>
+            </div>
+            <div class="mas-secciones">
+                <h3 id="mas-secciones-footer">MÁS SECCIONES</h3>
+                <ul id="mas-secciones-opciones" class="mas-secciones-opciones ocultar">
+                    <li>ACTUALIDAD</li>
+                    <li>CLIMA</li>
+                    <li>CLUB EL ECO</li>
+                    <li>EXTRAVÍOS</li>
+                    <li>ECO REGIÓN</li>
+                    <li>ARCHIVO</li>
+                    <li>SERVICIOS</li>
+                </ul>
+            </div>
+            <div class="notas-recientes">
+                <h3 id="notas-recientes-footer">NOTAS RECIENTES</h3>
+                <div id="notas-recientes-listado">
+                    <p>Aumentaron más de un 100 por ciento las operaciones inmobiliarias en la Provincia.</p>
+                    <p>Organizaciones sociales se movilizarán para pedir la constitución de un Consejo Popular Municipal
+                        de Crisis.</p>
+                    <p>Se necesitan donantes de sangre en el Hospital.</p>
+                    <p> Giró a la izquierda en la avenida España y provocó un choque.</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            ©Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/nav-footer.js"></script>
+    <script type="text/javascript" src="js/partial_render.js"></script>
+    <script type="text/javascript" src="js/acceder.js"></script>
+    <script type="text/javascript" src="js/contacto.js"></script>
+    <script type="text/javascript" src="js/administrador.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

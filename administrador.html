@@ -1,0 +1,62 @@
+<section class="contenedor-formulario container">
+    <div class="cargar-noticia-formulario">
+        <form class="formulario-cargar-noticia">
+            <h1>CARGAR NOTICIA</h1>
+            <label>Título:</label>
+            <input id="titulo-noticia" type="text" placeholder="Ingresa el título de la noticia">
+            <label>Detalle:</label>
+            <input id="detalle-noticia" class="descripcion-contacto" placeholder="Ingresa el detalle de la noticia">
+            <label>Sección:</label>
+            <select name="secciones" id="seccion-noticia" class="seccion-noticia">
+                <option value="ninguno">--- Ninguno ---</option>
+                <option value="ultimo">Lo ultimo</option>
+                <option value="policial">Policial</option>
+                <option value="deporte">Deporte</option>
+                <option value="social">Social</option>
+            </select>
+            <label>Imagen principal:</label>
+            <input id="file-noticia" type="file">
+            <p class="text-center" id="mensaje"></p>
+            <div class="contenedor-btn-cargar">
+                <input id="btn-cargar" type="button" class="btn-cargar" value="Cargar">
+            </div>
+            <div class="contenedor-btn-secundarios">
+                <input id="btn-borrar-todo" type="button" class="btn-borrar-todo" value="Vaciar Tabla">
+                <input id="btn-test" type="button" class="btn-test" value="Test">
+            </div>
+        </form>
+    </div>
+    <div class="contenedor-tabla-noticias">
+        <table>
+            <thead>
+                <tr class="encabezado text-center">
+                    <th>Titulo</th>
+                    <th class="select_filtro ocultar-seccion-admin">
+                        <p>Sección</p>
+                    </th>
+                    <th class="ocultar-detalles-admin">Detalle</th>
+                    <th class="img-principal ocultar-img-admin">Imagen principal</th>
+                    <th>Eliminar</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+        <div class="contenedor-paginacion">
+            <ul class="paginacion">
+                <li><a href="#" id="pag-anterior" class="pagina-link">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </a></li>
+                <li><a href="#" id="pag-siguiente" class="pagina-link">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </a></li>
+            </ul>
+            <select id="cantidad-registros" class="pagina-link">
+                <option value="0">-- Sin limite --</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+            </select>
+        </div>
+    </div>
+</section>

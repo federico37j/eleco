@@ -1,0 +1,48 @@
+<div>
+    <a href="#header" class="btn-ir-nav">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+</div>
+<section class="contenedor-contacto container">
+    <div class="contenedor-titulo-contacto text-justify">
+        <p class="encabezado">¿Tenés alguna consulta? <span>Háganoslo saber.</span></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita vitae aliquam. Tempore debitis
+            atque, quisquam, accusamus autem vel blanditiis praesentium, rerum enim ad temporibus quod velit est
+            unde itaque.</p>
+    </div>
+    <div class="contacto-formulario">
+        <form class="formulario_contacto">
+            <h1>CONTACTO</h1>
+            <div class="contenedor-label-nombre-apellido">
+                <div class="contenedor-label-nombre">
+                    <label>Nombre:</label>
+                </div>
+                <div class="contenedor-label-apellido">
+                    <label>Apellido:</label>
+                </div>
+            </div>
+            <div class="contenedor-nombre-apellido">
+                <input type="text" name="Nombre" placeholder="Ingresa tu nombre" class="nombre" required>
+                <input type="text" name="Apellido" placeholder="Ingresa tu apellido" class="apellido" required>
+            </div>
+            <label>Email:</label>
+            <input type="email" name="Email" placeholder="Ingresa tu email" required>
+            <label>Telefono:</label>
+            <input type="number" name="Telefono" placeholder="Ingresa tu teléfono" required>
+            <label>Descripcion:</label>
+            <input class="descripcion-contacto" placeholder="Ingresa tu descripción" required>
+            <div class="contenedor-captcha-validacion">
+                <button id="actualizar_captcha" class="btn-actualizar-captcha">
+                    <ion-icon name="reload-circle-outline"></ion-icon>
+                </button>
+                <input id="captcha_aleatorio" class="valor-aleatorio text-center" type="text" disabled>
+                <input id="captcha_usuario" class="captcha" type="text">
+                <button id="validar_captcha" class="btn-validar-captcha">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                </button>
+            </div>
+            <p class="text-center" id="mensaje_de_validacion"></p>
+            <input id="btn_enviar" type="submit" class="boton-desactivado btn-enviar" value="Enviar" disabled>
+        </form>
+    </div>
+</section>
